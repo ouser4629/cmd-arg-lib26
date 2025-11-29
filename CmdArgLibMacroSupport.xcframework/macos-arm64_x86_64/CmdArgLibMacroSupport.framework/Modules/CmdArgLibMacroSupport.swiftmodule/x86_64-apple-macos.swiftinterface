@@ -1,0 +1,62 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target x86_64-apple-macos26.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CmdArgLibMacroSupport
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol FuncInfoProtocol {
+  var name: Swift.String { get }
+  var callName: Swift.String { get }
+  var genericParameterClause: Swift.String { get }
+  var modifiers: Swift.String { get }
+  var mainFunctionReturnEffects: Swift.String { get }
+  var runFunctionReturnEffects: Swift.String { get }
+  var commandActionReturnEffects: Swift.String { get }
+  var returnType: Swift.String { get }
+  var returnPrefix: Swift.String { get }
+  var callModifiers: Swift.String { get }
+  var wrappedFunctionThrows: Swift.Bool { get }
+  var parameterInfos: [CmdArgLibMacroSupport.WorkFunctionParameterInfo] { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var stateType: Swift.String? { get }
+  #endif
+  var synthesizedStateType: Swift.Bool { get }
+}
+public func snake(_ source: Swift.String, _ sep: Swift.String = "-") -> Swift.String
+public typealias LabelTriple = (Swift.String?, Swift.String?, Swift.String?)
+public func makeLabelTriple(_ labelSpec: Swift.String, defaultLabelIsOldStyle: Swift.Bool = false) -> CmdArgLibMacroSupport.LabelTriple
+public func makeLabelSpec(_ triple: CmdArgLibMacroSupport.LabelTriple) -> Swift.String
+extension Swift.Sequence where Self.Element == Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func joinedWith(_ conjunction: Swift.String = "", quoteChar: Swift.String? = nil, separator: Swift.String = ", ") -> Swift.String
+  #endif
+}
+public enum TypeGroup {
+  case basicType, arrayOfCmdArgLibValue, variadicCmdArgLibValue, optionalCmdArgLibValue, flag, metaFlag
+  public static func == (a: CmdArgLibMacroSupport.TypeGroup, b: CmdArgLibMacroSupport.TypeGroup) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CmdArgLibMacroSupport.TypeGroup {
+  public static func CmdArgLibValueTypeName(typeName: Swift.String) -> Swift.String
+}
+public func makeCallFunctionCode(_ configCode: Swift.String, _ funcInfo: any CmdArgLibMacroSupport.FuncInfoProtocol, _ nameLabelTripleDict: [Swift.String : Swift.String]) -> Swift.String
+public func makeCommandActionCode(_ configCode: Swift.String, _ funcInfo: any CmdArgLibMacroSupport.FuncInfoProtocol, _ nameLabelTripleDict: [Swift.String : Swift.String]) -> (Swift.String, Swift.String)
+public func makeMainFunctionCode(_ configCode: Swift.String, _ funcInfo: any CmdArgLibMacroSupport.FuncInfoProtocol, _ nameLabelTripleDict: [Swift.String : Swift.String]) -> Swift.String
+public func makeParametersCode(parameterInfos: [CmdArgLibMacroSupport.WorkFunctionParameterInfo], nameLabelTripleDict: [Swift.String : Swift.String]) -> Swift.String
+public struct WorkFunctionParameterInfo {
+  public let name: Swift.String
+  public let parameterLabel: Swift.String
+  public let typeName: Swift.String
+  public let defaultValue: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String, parameterLabel: Swift.String? = nil, typeName: Swift.String, defaultValue: Swift.String? = nil)
+  #endif
+}
+extension CmdArgLibMacroSupport.TypeGroup : Swift.Equatable {}
+extension CmdArgLibMacroSupport.TypeGroup : Swift.Hashable {}

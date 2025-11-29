@@ -1,0 +1,464 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-macos26.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CmdArgLib
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct CmdTree<T> where T : Swift.Sendable {
+  public static var command: CmdArgLib.StatefulCommand<T> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func work(L__level maybeLevel: Swift.Int?, help: CmdArgLib.MetaFlag = MetaFlag(helpElements: help), nodePath: [CmdArgLib.StatefulCommand<T>], state: [T]) -> [T]
+  #endif
+  @discardableResult
+  @Sendable public static func action(tokens __tokens__: [Swift.String], nodePath __nodePath__: [CmdArgLib.StatefulCommand<T>] = [], state __state__: [T] = []) throws -> ([T], [Swift.String])
+  public static func actionConfig() -> CmdArgLib.PeerFunctionConfig
+}
+public let help: [CmdArgLib.ShowElement]
+public typealias StatefulCommandAction<T> = @Sendable ([Swift.String], [CmdArgLib.StatefulCommand<T>], [T]) async throws -> ([T], [Swift.String]) where T : Swift.Sendable
+public typealias SimpleCommand = CmdArgLib.StatefulCommand<Swift.Void>
+public protocol ShowableCommand : Swift.Sendable {
+  var name: Swift.String { get }
+  var synopsis: Swift.String { get }
+  var subcommands: [any CmdArgLib.ShowableCommand] { get }
+  var config: CmdArgLib.PeerFunctionConfig { get }
+}
+public struct StatefulCommand<T> : CmdArgLib.ShowableCommand, Swift.Sendable where T : Swift.Sendable {
+  public let name: Swift.String
+  public let synopsis: Swift.String
+  public let config: CmdArgLib.PeerFunctionConfig
+  public let showElements: [CmdArgLib.ShowElement]
+  public let children: [CmdArgLib.StatefulCommand<T>]
+  public var subcommands: [any CmdArgLib.ShowableCommand] {
+    get
+  }
+  public init(name: Swift.String, synopsis: Swift.String = "", config: CmdArgLib.PeerFunctionConfig, showElements: [CmdArgLib.ShowElement], action: @escaping CmdArgLib.StatefulCommandAction<T>, subcommandUsageLineChunk: Swift.String = "subcommand", childrenHeader: Swift.String = "\nSUBCOMMANDS:", children: [CmdArgLib.StatefulCommand<T>] = [], recastErrorScreenToSubcommandError: Swift.Bool = false, isAssistant: Swift.Bool = false)
+}
+extension CmdArgLib.StatefulCommand {
+  @discardableResult
+  public func run(tokens: [Swift.String], nodePath: [CmdArgLib.StatefulCommand<T>] = [], state: [T] = []) async throws -> (newState: [T], unconsummedWords: [Swift.String])
+}
+public func runCommand<T>(_ topLevel: CmdArgLib.StatefulCommand<T>) async where T : Swift.Sendable
+public struct ErrorScreen : Swift.Error, Swift.Sendable, Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct Exception : Swift.Error, Swift.CustomStringConvertible, Swift.Sendable {
+}
+extension CmdArgLib.Exception {
+  public init(handledErrors: [Swift.String])
+  public var description: Swift.String {
+    get
+  }
+}
+public func commandLineNameAndWords() -> (Swift.String, [Swift.String])
+public func writeToStandardError(_ message: Swift.String) throws
+public func showError(_ error: any Swift.Error) -> Swift.String
+public func printErrorAndExit(for error: any Swift.Error, callNames: [Swift.String])
+#if compiler(>=5.3) && $NonescapableTypes
+public func quotedOrNil<T>(_ maybeElement: T?) -> Swift.String? where T : Swift.CustomStringConvertible
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+public func quotedOrNil<T>(_ ee: [T]?) -> Swift.String? where T : Swift.CustomStringConvertible
+#endif
+extension Swift.Sequence where Self.Element == Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func joinedWith(_ conjunction: Swift.String = "", quoteChar: Swift.String? = nil, separator: Swift.String = ", ") -> Swift.String
+  #endif
+}
+extension Swift.String {
+  public func printfPadded(_ width: Swift.Int, char: Swift.Character = " ") -> Swift.String
+}
+public func terminalColumnWidth() -> Swift.Int
+public protocol HelpParameterFormat : Swift.Sendable {
+  var typeFormat: CmdArgLib.SymbolFormatter { get }
+  var useLongestLabelnUsageChunks: Swift.Bool { get }
+  func parameterElementLabel(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func parameterElementTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func parameterElementLabelTypeChunk(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func synopsisLabel(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func synopsisTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  func synopsisChunk(of parameter: CmdArgLib.Parameter) -> Swift.String?
+  #endif
+  func synopsisLabelTypeChunk(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func formattedTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func formattedTypeElementName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func packShortLabel(of parameter: CmdArgLib.Parameter) -> Swift.Bool
+  func supressBrackets(of parameter: CmdArgLib.Parameter) -> Swift.Bool
+}
+extension CmdArgLib.HelpParameterFormat {
+  public var typeFormat: CmdArgLib.SymbolFormatter {
+    get
+  }
+  public var useLongestLabelnUsageChunks: Swift.Bool {
+    get
+  }
+  public func parameterElementLabel(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func synopsisLabel(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func typeFormat(of parmeter: CmdArgLib.Parameter) -> CmdArgLib.SymbolFormatter
+  public func formattedTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func formattedTypeElementName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func parameterElementTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func synopsisTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func parameterElementLabelTypeChunk(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func synopsisLabelTypeChunk(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func supressBrackets(of parameter: CmdArgLib.Parameter) -> Swift.Bool
+  public func wrappedChunk(chunk: Swift.String, of parameter: CmdArgLib.Parameter) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func synopsisChunk(of parameter: CmdArgLib.Parameter) -> Swift.String?
+  #endif
+  public func packShortLabel(of parameter: CmdArgLib.Parameter) -> Swift.Bool
+}
+public struct DefaultParameterFormat : CmdArgLib.HelpParameterFormat {
+  public init()
+}
+public struct HelpScreen : Swift.CustomStringConvertible, Swift.Sendable {
+  public let callNames: [Swift.String]
+}
+extension CmdArgLib.HelpScreen {
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol ParameterElementFormatters : Swift.Sendable {
+  var typeFormat: CmdArgLib.SymbolFormatter { get }
+  var useLongestLabelnUsageChunks: Swift.Bool { get }
+  func parameterElementLabel(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func parameterElementTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func parameterElementLabelTypeChunk(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func synopsisLabel(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func synopsisTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  func synopsisChunk(of parameter: CmdArgLib.Parameter) -> Swift.String?
+  #endif
+  func synopsisLabelTypeChunk(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func formattedTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func formattedTypeElementName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  func packShortLabel(of parameter: CmdArgLib.Parameter) -> Swift.Bool
+  func supressBrackets(of parameter: CmdArgLib.Parameter) -> Swift.Bool
+}
+extension CmdArgLib.ParameterElementFormatters {
+  public var typeFormat: CmdArgLib.SymbolFormatter {
+    get
+  }
+  public var useLongestLabelnUsageChunks: Swift.Bool {
+    get
+  }
+  public func parameterElementLabel(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func synopsisLabel(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func typeFormat(of parmeter: CmdArgLib.Parameter) -> CmdArgLib.SymbolFormatter
+  public func formattedTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func formattedTypeElementName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func parameterElementTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func synopsisTypeName(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func parameterElementLabelTypeChunk(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func synopsisLabelTypeChunk(of parameter: CmdArgLib.Parameter) -> Swift.String
+  public func supressBrackets(of parameter: CmdArgLib.Parameter) -> Swift.Bool
+  public func wrappedChunk(chunk: Swift.String, of parameter: CmdArgLib.Parameter) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func synopsisChunk(of parameter: CmdArgLib.Parameter) -> Swift.String?
+  #endif
+  public func packShortLabel(of parameter: CmdArgLib.Parameter) -> Swift.Bool
+}
+public struct DefaultParameterElementFormatters : CmdArgLib.ParameterElementFormatters {
+  public init()
+}
+public enum CompletionHint : Swift.Equatable, Swift.Sendable {
+  case ignore
+  case exclusive
+  case pathExpansion
+  case choice(Swift.String)
+  case file(Swift.String)
+  case directory(Swift.String)
+  public static func == (a: CmdArgLib.CompletionHint, b: CmdArgLib.CompletionHint) -> Swift.Bool
+}
+public struct LinesBlock : Swift.CustomStringConvertible, Swift.Sendable {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct ParameterDescription : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String, description: Swift.String, nilDefaultValue: Swift.String? = nil, completionHint: CmdArgLib.CompletionHint = .pathExpansion)
+  #endif
+}
+public struct ParameterShowElement : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String, description: Swift.String, defaultValueOverride: Swift.String? = nil, completionHint: CmdArgLib.CompletionHint = .pathExpansion)
+  #endif
+}
+public struct ParseResult {
+  public let parsedValues: [Swift.String : CmdArgLib.ParsedValue]
+  public let trailingWords: [Swift.String]
+  public let parsedErrors: [CmdArgLib.CmdArgLibParseError]
+  public init(callNames: [Swift.String], tokens: [Swift.String], stopWords: [Swift.String] = [], config: CmdArgLib.PeerFunctionConfig) throws
+}
+public struct PeerFunctionConfig : Swift.Sendable {
+  public var parameters: [CmdArgLib.Parameter] {
+    get
+  }
+  public var parameterNamed: [Swift.String : CmdArgLib.Parameter] {
+    get
+  }
+}
+extension CmdArgLib.PeerFunctionConfig {
+  public init()
+  public func throwErrorScreen(callNames: [Swift.String], messages: [Swift.String]) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func messagesReportedIn(HandledErrorException e: CmdArgLib.Exception) -> [Swift.String]?
+  #endif
+  public mutating func addMetaFlags(_ pairs: [(Swift.String, any CmdArgLib.MetaFlagProtocol)])
+  public mutating func addShadowGroups(_ shadowGroups: [Swift.String] = [])
+  public mutating func addParameters(_ parameters: [CmdArgLib.Parameter])
+}
+public struct ShowElement : Swift.Sendable {
+}
+extension CmdArgLib.ShowElement {
+  public static func hintForNameDictionary(for elements: [CmdArgLib.ShowElement]) -> [Swift.String : CmdArgLib.CompletionHint]
+  public static func prologue(description: Swift.String, date: Swift.String = "", operatingSystem: Swift.String = "") -> CmdArgLib.ShowElement
+  public static func synopsis(_ prefix: Swift.String = "SYNOPSIS", parameterNames: [Swift.String] = []) -> CmdArgLib.ShowElement
+  public static func synopsis(_ prefix: Swift.String = "SYNOPSIS", parameterNameLists: [[Swift.String]]) -> CmdArgLib.ShowElement
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func parameter(_ name: Swift.String, _ description: Swift.String, defaultValueOverride: Swift.String? = nil, completionHint: CmdArgLib.CompletionHint = .exclusive) -> CmdArgLib.ShowElement
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func text(_ header: Swift.String, _ text: Swift.String? = nil) -> CmdArgLib.ShowElement
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func lines(_ header: Swift.String? = nil, _ text: Swift.String? = nil) -> CmdArgLib.ShowElement
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func lines(_ header: Swift.String? = nil, _ lines: [Swift.String]) -> CmdArgLib.ShowElement
+  #endif
+}
+public struct TextBlock : Swift.CustomStringConvertible, Swift.Sendable {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct ValueInitializer {
+  public init(parsedValues: [Swift.String : CmdArgLib.ParsedValue])
+  public func parseFlag(for name: Swift.String, _ messages: inout [Swift.String]) -> CmdArgLib.Flag
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func parseValue<T>(for name: Swift.String, _ defaultValue: T?, _ messages: inout [Swift.String]) -> T? where T : CmdArgLib.BasicParameterType
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func parseOptionalValue<T>(for name: Swift.String, _ messages: inout [Swift.String]) -> T? where T : CmdArgLib.BasicParameterType
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func parseListOfValues<T>(for name: Swift.String, _ defaultValue: [T]?, _ messages: inout [Swift.String]) -> [T]? where T : CmdArgLib.BasicParameterType
+  #endif
+}
+public protocol BasicParameterType : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func initFromString(_ string: Swift.String) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func initFromParsedValue(_ parsedValue: CmdArgLib.ParsedValue) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeArrayFromParsedValue(_ parsedValue: CmdArgLib.ParsedValue) -> ([Self], Swift.String?)
+  #endif
+}
+extension CmdArgLib.BasicParameterType {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initFromParsedValue(_ parsedValue: CmdArgLib.ParsedValue) -> Self?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeArrayFromParsedValue(_ parsedValue: CmdArgLib.ParsedValue) -> ([Self], Swift.String?)
+  #endif
+}
+extension Swift.String : CmdArgLib.BasicParameterType {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initFromString(_ string: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initFromParsedValue(_ parsedValue: CmdArgLib.ParsedValue) -> Swift.String?
+  #endif
+}
+extension Swift.Int : CmdArgLib.BasicParameterType {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initFromString(_ rawString: Swift.String) -> Swift.Int?
+  #endif
+}
+extension Swift.Double : CmdArgLib.BasicParameterType {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initFromString(_ rawString: Swift.String) -> Swift.Double?
+  #endif
+}
+extension Swift.RawRepresentable where Self.RawValue == Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initFromString(_ string: Swift.String) -> Self?
+  #endif
+  public var description: Swift.String {
+    get
+  }
+}
+extension Swift.CaseIterable where Self : Swift.CustomStringConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func casesJoined(with conjunction: Swift.String = "and", quoteChar q: Swift.String? = "\"", separator s: Swift.String = ", ") -> Swift.String
+  #endif
+}
+public protocol MetaFlagProtocol : Swift.Sendable {
+  var isHelpMetaFlag: Swift.Bool { get }
+  var exclusiveParameterGroups: [[Swift.String]] { get set }
+  var metaFlagFunction: CmdArgLib.MetaFlagFunction { get }
+}
+public struct MetaFlag : CmdArgLib.MetaFlagProtocol, Swift.Sendable {
+  public let isHelpMetaFlag: Swift.Bool
+  public var exclusiveParameterGroups: [[Swift.String]]
+  public let metaFlagFunction: CmdArgLib.MetaFlagFunction
+}
+extension CmdArgLib.MetaFlag {
+  public init(string: Swift.String)
+  public init(text block: CmdArgLib.TextBlock)
+  public init(textBlocks: [CmdArgLib.TextBlock])
+}
+extension CmdArgLib.MetaFlag {
+  public init(helpElements: [CmdArgLib.ShowElement], conflictGroups: [Swift.String] = [])
+}
+extension CmdArgLib.MetaFlag {
+  public init(manPageElements: [CmdArgLib.ShowElement], conflictGroups: [Swift.String] = [])
+}
+public typealias Flag = Swift.Bool
+public typealias Variadic<T> = [T] where T : CmdArgLib.BasicParameterType
+public typealias MetaFlagFunction = @Sendable ([Swift.String], CmdArgLib.PeerFunctionConfig) -> CmdArgLib.Exception
+public struct ParsedItem : Swift.Sendable, CmdArgLib.BasicParameterType {
+  public let parameterName: Swift.String
+  public var position: Swift.Int {
+    get
+  }
+  public var values: [Swift.String] {
+    get
+  }
+  public var label: Swift.String? {
+    get
+  }
+  public static func before(_ left: CmdArgLib.ParsedItem, _ right: CmdArgLib.ParsedItem) -> Swift.Bool
+}
+extension CmdArgLib.ParsedItem {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initFromString(_ string: Swift.String) -> CmdArgLib.ParsedItem?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initFromParsedValue(_ parsedValue: CmdArgLib.ParsedValue) -> CmdArgLib.ParsedItem?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeArrayFromParsedValue(_ parsedValue: CmdArgLib.ParsedValue) -> ([CmdArgLib.ParsedItem], Swift.String?)
+  #endif
+}
+public typealias LabelTriple = (Swift.String?, Swift.String?, Swift.String?)
+public func makeLabelTriple(_ labelSpec: Swift.String, defaultLabelIsOldStyle: Swift.Bool = false) -> CmdArgLib.LabelTriple
+public func makeLabelSpec(_ triple: CmdArgLib.LabelTriple) -> Swift.String
+public let PARAMETER_MAX: Swift.Int
+@_hasMissingDesignatedInitializers final public class Parameter : Swift.Sendable {
+  final public let name: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String, labelTriple: CmdArgLib.LabelTriple, defaultValue: Swift.String? = nil, typeName: Swift.String, minMaxNumberOfValues: (Swift.Int, Swift.Int), minMaxNumberOfOccurances: (Swift.Int, Swift.Int), minMaxNumberOfElements: (Swift.Int, Swift.Int) = (0, Int.max), isMetaFlag: Swift.Bool)
+  #endif
+  @objc deinit
+}
+extension CmdArgLib.Parameter {
+  final public var isFlagOrMetaFlag: Swift.Bool {
+    get
+  }
+  final public var isVariadic: Swift.Bool {
+    get
+  }
+  final public var isPositional: Swift.Bool {
+    get
+  }
+  final public var isRequired: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var shortLabelName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var oldStyleLabelName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var longLabelName: Swift.String? {
+    get
+  }
+  #endif
+  final public var allLabels: [Swift.String] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var shortestLabel: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var longestLabel: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var shortestLabelName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var longestLabelName: Swift.String? {
+    get
+  }
+  #endif
+  final public var labelSpec: Swift.String {
+    get
+  }
+  final public var unformattedTypeElementName: Swift.String {
+    get
+  }
+  final public var unformattedTypeName: Swift.String {
+    get
+  }
+}
+public struct ParsedValue : Swift.Sendable {
+}
+public enum CmdArgLibParseError : Swift.Error, Swift.Equatable {
+  case unrecognizedPackedShortLabel([Swift.String], Swift.String)
+  case unrecognizedLabel(Swift.String)
+  case flagWithAttachedArgument(Swift.String, Swift.String)
+  case missingOccuranceFor(Swift.String)
+  case extraOccuranceFor([Swift.String])
+  case missingValueAfter(Swift.String)
+  case missingPositionalValue(Swift.String)
+  case unassignedPositionalValues([Swift.String])
+  case missingElementsFor(Swift.String)
+  case extraElementsFor(Swift.String)
+  public static func == (a: CmdArgLib.CmdArgLibParseError, b: CmdArgLib.CmdArgLibParseError) -> Swift.Bool
+}
+extension CmdArgLib.CmdArgLibParseError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct SymbolFormatter : Swift.Sendable {
+  public enum TextCase : Swift.Sendable {
+    case upper, lower, asIs
+    public static func == (a: CmdArgLib.SymbolFormatter.TextCase, b: CmdArgLib.SymbolFormatter.TextCase) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(textCase: CmdArgLib.SymbolFormatter.TextCase = .lower, snakeSeparator: Swift.String = "", brackets: Swift.String = "")
+  public func format(_ string: Swift.String) -> Swift.String
+}
+extension CmdArgLib.SymbolFormatter {
+  public static func snake(_ source: Swift.String, _ sep: Swift.String = "") -> Swift.String
+}
+extension CmdArgLib.SymbolFormatter.TextCase : Swift.Equatable {}
+extension CmdArgLib.SymbolFormatter.TextCase : Swift.Hashable {}

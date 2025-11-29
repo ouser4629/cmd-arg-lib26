@@ -1,0 +1,1889 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "CmdArgLibMacroSupport",
+    "printedName": "CmdArgLibMacroSupport",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "FuncInfoProtocol",
+        "printedName": "FuncInfoProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP4nameSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP4nameSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP4nameSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP4nameSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "callName",
+            "printedName": "callName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP8callNameSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP8callNameSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP8callNameSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP8callNameSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "genericParameterClause",
+            "printedName": "genericParameterClause",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP22genericParameterClauseSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP22genericParameterClauseSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP22genericParameterClauseSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP22genericParameterClauseSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "modifiers",
+            "printedName": "modifiers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP9modifiersSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP9modifiersSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP9modifiersSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP9modifiersSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mainFunctionReturnEffects",
+            "printedName": "mainFunctionReturnEffects",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP25mainFunctionReturnEffectsSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP25mainFunctionReturnEffectsSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP25mainFunctionReturnEffectsSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP25mainFunctionReturnEffectsSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "runFunctionReturnEffects",
+            "printedName": "runFunctionReturnEffects",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP24runFunctionReturnEffectsSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP24runFunctionReturnEffectsSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP24runFunctionReturnEffectsSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP24runFunctionReturnEffectsSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "commandActionReturnEffects",
+            "printedName": "commandActionReturnEffects",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP26commandActionReturnEffectsSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP26commandActionReturnEffectsSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP26commandActionReturnEffectsSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP26commandActionReturnEffectsSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "returnType",
+            "printedName": "returnType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP10returnTypeSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP10returnTypeSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP10returnTypeSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP10returnTypeSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "returnPrefix",
+            "printedName": "returnPrefix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP12returnPrefixSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP12returnPrefixSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP12returnPrefixSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP12returnPrefixSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "callModifiers",
+            "printedName": "callModifiers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP13callModifiersSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP13callModifiersSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP13callModifiersSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP13callModifiersSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wrappedFunctionThrows",
+            "printedName": "wrappedFunctionThrows",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP21wrappedFunctionThrowsSbvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP21wrappedFunctionThrowsSbvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP21wrappedFunctionThrowsSbvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP21wrappedFunctionThrowsSbvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parameterInfos",
+            "printedName": "parameterInfos",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CmdArgLibMacroSupport.WorkFunctionParameterInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WorkFunctionParameterInfo",
+                    "printedName": "CmdArgLibMacroSupport.WorkFunctionParameterInfo",
+                    "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP14parameterInfosSayAA021WorkFunctionParameterG0VGvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP14parameterInfosSayAA021WorkFunctionParameterG0VGvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CmdArgLibMacroSupport.WorkFunctionParameterInfo]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WorkFunctionParameterInfo",
+                        "printedName": "CmdArgLibMacroSupport.WorkFunctionParameterInfo",
+                        "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP14parameterInfosSayAA021WorkFunctionParameterG0VGvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP14parameterInfosSayAA021WorkFunctionParameterG0VGvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stateType",
+            "printedName": "stateType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP9stateTypeSSSgvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP9stateTypeSSSgvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP9stateTypeSSSgvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP9stateTypeSSSgvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "synthesizedStateType",
+            "printedName": "synthesizedStateType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP20synthesizedStateTypeSbvp",
+            "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP20synthesizedStateTypeSbvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP20synthesizedStateTypeSbvg",
+                "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP20synthesizedStateTypeSbvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "genericSig": "<τ_0_0 where τ_0_0 : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "sugared_genericSig": "<Self where Self : CmdArgLibMacroSupport.FuncInfoProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP",
+        "mangledName": "$s21CmdArgLibMacroSupport16FuncInfoProtocolP",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "snake",
+        "printedName": "snake(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:21CmdArgLibMacroSupport5snakeyS2S_SStF",
+        "mangledName": "$s21CmdArgLibMacroSupport5snakeyS2S_SStF",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "makeLabelTriple",
+        "printedName": "makeLabelTriple(_:defaultLabelIsOldStyle:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Tuple",
+            "printedName": "(Swift.String?, Swift.String?, Swift.String?)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ]
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "hasDefaultArg": true,
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:21CmdArgLibMacroSupport15makeLabelTriple_07defaultG10IsOldStyleSSSg_A2DtSS_SbtF",
+        "mangledName": "$s21CmdArgLibMacroSupport15makeLabelTriple_07defaultG10IsOldStyleSSSg_A2DtSS_SbtF",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "makeLabelSpec",
+        "printedName": "makeLabelSpec(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Tuple",
+            "printedName": "(Swift.String?, Swift.String?, Swift.String?)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:21CmdArgLibMacroSupport13makeLabelSpecyS2SSg_A2Ct_tF",
+        "mangledName": "$s21CmdArgLibMacroSupport13makeLabelSpecyS2SSg_A2Ct_tF",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TypeGroup",
+        "printedName": "TypeGroup",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "basicType",
+            "printedName": "basicType",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmdArgLibMacroSupport.TypeGroup.Type) -> CmdArgLibMacroSupport.TypeGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TypeGroup",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                    "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeGroup",
+                        "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                        "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21CmdArgLibMacroSupport9TypeGroupO05basicF0yA2CmF",
+            "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO05basicF0yA2CmF",
+            "moduleName": "CmdArgLibMacroSupport"
+          },
+          {
+            "kind": "Var",
+            "name": "arrayOfCmdArgLibValue",
+            "printedName": "arrayOfCmdArgLibValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmdArgLibMacroSupport.TypeGroup.Type) -> CmdArgLibMacroSupport.TypeGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TypeGroup",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                    "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeGroup",
+                        "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                        "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21CmdArgLibMacroSupport9TypeGroupO07arrayOfabC5ValueyA2CmF",
+            "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO07arrayOfabC5ValueyA2CmF",
+            "moduleName": "CmdArgLibMacroSupport"
+          },
+          {
+            "kind": "Var",
+            "name": "variadicCmdArgLibValue",
+            "printedName": "variadicCmdArgLibValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmdArgLibMacroSupport.TypeGroup.Type) -> CmdArgLibMacroSupport.TypeGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TypeGroup",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                    "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeGroup",
+                        "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                        "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21CmdArgLibMacroSupport9TypeGroupO08variadicabC5ValueyA2CmF",
+            "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO08variadicabC5ValueyA2CmF",
+            "moduleName": "CmdArgLibMacroSupport"
+          },
+          {
+            "kind": "Var",
+            "name": "optionalCmdArgLibValue",
+            "printedName": "optionalCmdArgLibValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmdArgLibMacroSupport.TypeGroup.Type) -> CmdArgLibMacroSupport.TypeGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TypeGroup",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                    "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeGroup",
+                        "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                        "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21CmdArgLibMacroSupport9TypeGroupO08optionalabC5ValueyA2CmF",
+            "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO08optionalabC5ValueyA2CmF",
+            "moduleName": "CmdArgLibMacroSupport"
+          },
+          {
+            "kind": "Var",
+            "name": "flag",
+            "printedName": "flag",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmdArgLibMacroSupport.TypeGroup.Type) -> CmdArgLibMacroSupport.TypeGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TypeGroup",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                    "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeGroup",
+                        "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                        "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21CmdArgLibMacroSupport9TypeGroupO4flagyA2CmF",
+            "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO4flagyA2CmF",
+            "moduleName": "CmdArgLibMacroSupport"
+          },
+          {
+            "kind": "Var",
+            "name": "metaFlag",
+            "printedName": "metaFlag",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmdArgLibMacroSupport.TypeGroup.Type) -> CmdArgLibMacroSupport.TypeGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TypeGroup",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                    "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmdArgLibMacroSupport.TypeGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeGroup",
+                        "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                        "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21CmdArgLibMacroSupport9TypeGroupO8metaFlagyA2CmF",
+            "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO8metaFlagyA2CmF",
+            "moduleName": "CmdArgLibMacroSupport"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TypeGroup",
+                "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TypeGroup",
+                "printedName": "CmdArgLibMacroSupport.TypeGroup",
+                "usr": "s:21CmdArgLibMacroSupport9TypeGroupO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21CmdArgLibMacroSupport9TypeGroupO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO2eeoiySbAC_ACtFZ",
+            "moduleName": "CmdArgLibMacroSupport",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport9TypeGroupO9hashValueSivp",
+            "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO9hashValueSivp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport9TypeGroupO9hashValueSivg",
+                "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO9hashValueSivg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21CmdArgLibMacroSupport9TypeGroupO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO4hash4intoys6HasherVz_tF",
+            "moduleName": "CmdArgLibMacroSupport",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "CmdArgLibValueTypeName",
+            "printedName": "CmdArgLibValueTypeName(typeName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21CmdArgLibMacroSupport9TypeGroupO0abc5ValueF4Name04typeI0S2S_tFZ",
+            "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO0abc5ValueF4Name04typeI0S2S_tFZ",
+            "moduleName": "CmdArgLibMacroSupport",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:21CmdArgLibMacroSupport9TypeGroupO",
+        "mangledName": "$s21CmdArgLibMacroSupport9TypeGroupO",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "makeCallFunctionCode",
+        "printedName": "makeCallFunctionCode(_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "FuncInfoProtocol",
+            "printedName": "any CmdArgLibMacroSupport.FuncInfoProtocol",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Dictionary",
+            "printedName": "[Swift.String : Swift.String]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "usr": "s:SD"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:21CmdArgLibMacroSupport20makeCallFunctionCodeyS2S_AA16FuncInfoProtocol_pSDyS2SGtF",
+        "mangledName": "$s21CmdArgLibMacroSupport20makeCallFunctionCodeyS2S_AA16FuncInfoProtocol_pSDyS2SGtF",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "makeCommandActionCode",
+        "printedName": "makeCommandActionCode(_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Tuple",
+            "printedName": "(Swift.String, Swift.String)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ]
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "FuncInfoProtocol",
+            "printedName": "any CmdArgLibMacroSupport.FuncInfoProtocol",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Dictionary",
+            "printedName": "[Swift.String : Swift.String]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "usr": "s:SD"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:21CmdArgLibMacroSupport21makeCommandActionCodeySS_SStSS_AA16FuncInfoProtocol_pSDyS2SGtF",
+        "mangledName": "$s21CmdArgLibMacroSupport21makeCommandActionCodeySS_SStSS_AA16FuncInfoProtocol_pSDyS2SGtF",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "makeMainFunctionCode",
+        "printedName": "makeMainFunctionCode(_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "FuncInfoProtocol",
+            "printedName": "any CmdArgLibMacroSupport.FuncInfoProtocol",
+            "usr": "s:21CmdArgLibMacroSupport16FuncInfoProtocolP"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Dictionary",
+            "printedName": "[Swift.String : Swift.String]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "usr": "s:SD"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:21CmdArgLibMacroSupport20makeMainFunctionCodeyS2S_AA16FuncInfoProtocol_pSDyS2SGtF",
+        "mangledName": "$s21CmdArgLibMacroSupport20makeMainFunctionCodeyS2S_AA16FuncInfoProtocol_pSDyS2SGtF",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "makeParametersCode",
+        "printedName": "makeParametersCode(parameterInfos:nameLabelTripleDict:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[CmdArgLibMacroSupport.WorkFunctionParameterInfo]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WorkFunctionParameterInfo",
+                "printedName": "CmdArgLibMacroSupport.WorkFunctionParameterInfo",
+                "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Dictionary",
+            "printedName": "[Swift.String : Swift.String]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "usr": "s:SD"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:21CmdArgLibMacroSupport18makeParametersCode14parameterInfos19nameLabelTripleDictSSSayAA25WorkFunctionParameterInfoVG_SDyS2SGtF",
+        "mangledName": "$s21CmdArgLibMacroSupport18makeParametersCode14parameterInfos19nameLabelTripleDictSSSayAA25WorkFunctionParameterInfoVG_SDyS2SGtF",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WorkFunctionParameterInfo",
+        "printedName": "WorkFunctionParameterInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV4nameSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport25WorkFunctionParameterInfoV4nameSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV4nameSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport25WorkFunctionParameterInfoV4nameSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parameterLabel",
+            "printedName": "parameterLabel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV14parameterLabelSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport25WorkFunctionParameterInfoV14parameterLabelSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV14parameterLabelSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport25WorkFunctionParameterInfoV14parameterLabelSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "typeName",
+            "printedName": "typeName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV8typeNameSSvp",
+            "mangledName": "$s21CmdArgLibMacroSupport25WorkFunctionParameterInfoV8typeNameSSvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV8typeNameSSvg",
+                "mangledName": "$s21CmdArgLibMacroSupport25WorkFunctionParameterInfoV8typeNameSSvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultValue",
+            "printedName": "defaultValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV12defaultValueSSSgvp",
+            "mangledName": "$s21CmdArgLibMacroSupport25WorkFunctionParameterInfoV12defaultValueSSSgvp",
+            "moduleName": "CmdArgLibMacroSupport",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV12defaultValueSSSgvg",
+                "mangledName": "$s21CmdArgLibMacroSupport25WorkFunctionParameterInfoV12defaultValueSSSgvg",
+                "moduleName": "CmdArgLibMacroSupport",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:parameterLabel:typeName:defaultValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WorkFunctionParameterInfo",
+                "printedName": "CmdArgLibMacroSupport.WorkFunctionParameterInfo",
+                "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV4name14parameterLabel8typeName12defaultValueACSS_SSSgSSAHtcfc",
+            "mangledName": "$s21CmdArgLibMacroSupport25WorkFunctionParameterInfoV4name14parameterLabel8typeName12defaultValueACSS_SSSgSSAHtcfc",
+            "moduleName": "CmdArgLibMacroSupport",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21CmdArgLibMacroSupport25WorkFunctionParameterInfoV",
+        "mangledName": "$s21CmdArgLibMacroSupport25WorkFunctionParameterInfoV",
+        "moduleName": "CmdArgLibMacroSupport",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Sequence",
+        "printedName": "Sequence",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "joinedWith",
+            "printedName": "joinedWith(_:quoteChar:separator:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:ST21CmdArgLibMacroSupportSS7ElementRtzrlE10joinedWith_9quoteChar9separatorS2S_SSSgSStF",
+            "mangledName": "$sST21CmdArgLibMacroSupportSS7ElementRtzrlE10joinedWith_9quoteChar9separatorS2S_SSSgSStF",
+            "moduleName": "CmdArgLibMacroSupport",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sequence, τ_0_0.Element == Swift.String>",
+            "sugared_genericSig": "<Self where Self : Swift.Sequence, Self.Element == Swift.String>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:ST",
+        "mangledName": "$sST",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0.Element == τ_0_0.Iterator.Element, τ_0_0.Iterator : Swift.IteratorProtocol>",
+        "sugared_genericSig": "<Self.Element == Self.Iterator.Element, Self.Iterator : Swift.IteratorProtocol>",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/po\/ZLocal\/ZDev\/Swift\/Lib\/CmdArgLibSources\/Frameworks\/CmdArgLibMacroSupport\/CmdArgLibMacroSupport\/CodeHelpers\/OtheCodeHelpers.swift",
+      "kind": "StringLiteral",
+      "offset": 669,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/po\/ZLocal\/ZDev\/Swift\/Lib\/CmdArgLibSources\/Frameworks\/CmdArgLibMacroSupport\/CmdArgLibMacroSupport\/CodeHelpers\/OtheCodeHelpers.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4325,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/po\/ZLocal\/ZDev\/Swift\/Lib\/CmdArgLibSources\/Frameworks\/CmdArgLibMacroSupport\/CmdArgLibMacroSupport\/CodeHelpers\/OtheCodeHelpers.swift",
+      "kind": "StringLiteral",
+      "offset": 5777,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/po\/ZLocal\/ZDev\/Swift\/Lib\/CmdArgLibSources\/Frameworks\/CmdArgLibMacroSupport\/CmdArgLibMacroSupport\/CodeHelpers\/OtheCodeHelpers.swift",
+      "kind": "StringLiteral",
+      "offset": 5827,
+      "length": 4,
+      "value": "\", \""
+    }
+  ]
+}
