@@ -8,7 +8,7 @@ A Swift library with a succinct syntax for defining and parsing command line arg
 ### Highlights
 
 * The library provides macros that generate peer functions that parse command-line arguments and pass the
-parsed values to annotated "work functions".
+parsed values to annotated "work functions".  
 
 * The syntax of acceptable command-line arguments and the types of the parsed values are determined solely from 
 the work function’s parameters (except for one macro option, `shadowGroups`).
